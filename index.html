@@ -83,7 +83,7 @@
           <div class="flex justify-center">
             <div class="rounded-lg shadow-lg text-white max-w-sm mt-7">
               <h5 class="text-2xl font-medium">Selected - V</h5>
-              <ol id="selectedPlayers" class="pt-5 space-y-4"> </ol>
+              <ol id="selectedPlayers" class="pt-5 space-y-4"></ol>
             </div>
           </div>
         </div>
@@ -141,46 +141,39 @@
             </div>
           </div>
         </div>
-        <div class="bg-black flex flex-col rounded-lg">
+        <div class="bg-black flex flex-col rounded-lg budget-div px-5">
           <div class="flex justify-center mt-10">
             <h5 class="text-2xl font-medium text-white">Budget</h5>
           </div>
-          <div class="flex justify-center mt-7">
-            <p class="text-white">
-              Per Player
-              <input class="text-black" type="text" name="" id="budget-field" />
-            </p>
+          <div class="flex justify-between mt-7">
+            <label>Per Player</label>
+            <input class="text-black" type="text" name="" id="budget-field" />
           </div>
           <div class="flex justify-center mt-7">
-            <button id="btn-calculate" class="bg-green-500 text-white w-9/12 mx-auto block">
+            <button id="btn-calculate" class="bg-green-500 text-white w-9/12 mx-auto block p-2">
               Calculate
             </button>
           </div>
-          <div class="mt-7">
-            <p class="text-white mx-2">
-              Player Expenses : $<span id="player-cost-element"> </span>
-            </p>
+          <div class="mt-7 flex justify-between text-white">
+            <span>Expenses</span>
+            <span>$<span id="player-cost-element"> </span></span>
           </div>
-          <div class="flex justify-center mt-7">
-            <p class="text-white">
-              Manager<input class="text-black" type="text" name="" id="manager-inputfield" />
-            </p>
+          <div class="flex justify-between mt-7">
+            <label>Manager</label>
+            <input class="text-black" type="text" name="" id="manager-inputfield" required />
           </div>
-          <div class="flex justify-center mt-7">
-            <p class="text-white">
-              Coach
-              <input class="text-black" type="text" name="" id="coach-inputfield" />
-            </p>
+          <div class="flex justify-between mt-7">
+            <label>Coach</label>
+            <input class="text-black" type="text" name="" id="coach-inputfield" required />
           </div>
-          <div class="flex justify-center mt-7">
-            <button id="btn-total" class="bg-green-500 text-white w-9/12 mx-auto block">
+          <div class="flex justify-between mt-7">
+            <button id="btn-total" class="bg-green-500 text-white w-9/12 mx-auto block p-2">
               Calculate Total
             </button>
           </div>
-          <div class="mt-7">
-            <p class="text-white mx-2">
-              Total = $<span id="total-inputfield"> </span>
-            </p>
+          <div class="mt-7 flex justify-between text-white">
+            <span>Total</span>
+            <span> $<span id="total-inputfield"> </span></span>
           </div>
         </div>
       </div>
